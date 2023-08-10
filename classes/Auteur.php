@@ -95,10 +95,11 @@ class Auteur {
 
     // et la fucntion pour afficher le livre
     public function afficherBibliographie(){
-        $result = "<h2> Auteur $this</h2>";
+        $result = "<h2>Auteur " . $this->getPrenom() . " " . $this->getNom() . "</h2>";
         foreach($this->bibliographies as $bibliographies){
             $result .="<li> $bibliographies</li>";
         }
+        return $result;
     }
 }
 

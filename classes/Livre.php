@@ -122,7 +122,7 @@ class Livre {
     //TODO la méthode toString
     public function __toString()
     {
-        return $this->getTitre() ."(".$this->getAnneeParution()->format("Y")." ): ".$this->getNbrePage() ." pages / ".$this->getPrix();
+        return $this->getTitre() ."(".$this->getAnneeParution()->format("Y")." ): ".$this->getNbrePage() ." pages / ".$this->getPrix() ." € <br>";
     }
 }
 
