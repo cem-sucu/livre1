@@ -5,6 +5,7 @@ spl_autoload_register(function ($class_name){
     require 'classes/'. $class_name . '.php';
 });
 
+$auteur1 = new Auteur("King", "Stephen");
 
 
 
